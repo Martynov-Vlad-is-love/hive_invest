@@ -17,10 +17,10 @@ class ProfileAdapter extends TypeAdapter<Profile> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Profile(
-      fields[0] as String,
-      fields[1] as String,
       (fields[2] as HiveList?)?.castHiveList(),
       (fields[3] as HiveList?)?.castHiveList(),
+      nickName: fields[0] as String,
+      password: fields[1] as String,
     );
   }
 

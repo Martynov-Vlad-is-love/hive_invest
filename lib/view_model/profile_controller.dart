@@ -7,10 +7,9 @@ import 'package:hive_invest/model/profile/profile.dart';
 
 /// Controller for injecting profile dependency.
 class ProfileController extends ChangeNotifier {
-
   /// Method for adapter registration.
-  void _registerAdapter(){
-    if(!Hive.isAdapterRegistered(1)){
+  void _registerAdapter() {
+    if (!Hive.isAdapterRegistered(1)) {
       Hive.registerAdapter(ProfileAdapter());
     }
   }
@@ -43,5 +42,4 @@ class ProfileController extends ChangeNotifier {
       throw Exception('encryption key is null');
     }
   }
-
 }

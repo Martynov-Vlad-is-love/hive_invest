@@ -5,14 +5,14 @@ part 'investition.g.dart';
 
 /// Profile that storages in local memory.
 @HiveType(typeId: 2)
-class Investition{
+class Investition {
   /// Nick name.
   @HiveField(0)
   String itemName;
 
   /// Password.
   @HiveField(1)
-  double buyPrice ;
+  double buyPrice;
 
   /// Password.
   @HiveField(2)
@@ -20,8 +20,8 @@ class Investition{
 
   /// Password.
   @HiveField(3)
-  double count ;
+  double count;
 
   /// Constructor.
-  Investition(this.itemName,this.buyPrice, this.sellPrice, this.count);
+  Investition(this.itemName, this.buyPrice, this.sellPrice, this.count);
 }
